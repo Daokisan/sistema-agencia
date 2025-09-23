@@ -46,6 +46,11 @@ import { ReactComponent as PageIcon } from "./page.svg?react";
 import { ReactComponent as PieChartIcon } from "./pie-chart.svg?react";
 import { ReactComponent as BoxCubeIcon } from "./box-cube.svg?react";
 import { ReactComponent as PlugInIcon } from "./plug-in.svg?react";
+import { ReactComponent as PlanoIcon } from "./planos.svg?react";
+import { ReactComponent as ChaveIcon } from "./chave-inglesa.svg?react";
+import { ReactComponent as FornecedorIcon } from "./fornecedor.svg?react";
+import { ReactComponent as RepresentanteIcon } from "./representante.svg?react";
+import { ReactComponent as PedidosIcon } from "./pedidos.svg?react";
 import { ReactComponent as DocsIcon } from "./docs.svg?react";
 import { ReactComponent as MailIcon } from "./mail-line.svg?react";
 import { ReactComponent as HorizontaLDots } from "./horizontal-dots.svg?react";
@@ -55,6 +60,11 @@ import { ReactComponent as AlertHexaIcon } from "./alert-hexa.svg?react";
 import { ReactComponent as ErrorHexaIcon } from "./info-hexa.svg?react";
 
 export {
+  PedidosIcon,
+  RepresentanteIcon,
+  FornecedorIcon,
+  ChaveIcon,
+  PlanoIcon,
   ErrorHexaIcon,
   AlertHexaIcon,
   MoreDotIcon,

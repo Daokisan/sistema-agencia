@@ -7,19 +7,19 @@ import {
 } from "../ui/table";
 import Badge from "../ui/badge/Badge";
 
-// Define the TypeScript interface for the table rows
+
 interface Product {
-  id: number; // Unique identifier for each product
-  name: string; // Product name
-  variants: string; // Number of variants (e.g., "1 Variant", "2 Variants")
-  category: string; // Category of the product
-  valor: string; // valor of the product (as a string with currency symbol)
-  // status: string; // Status of the product
-  image: string; // URL or path to the product image
-  status: "Pago" | "Pendente" | "Cancelado"; // Status of the product
+  id: number; 
+  name: string; 
+  variants: string; 
+  category: string; 
+  valor: string;
+ 
+  image: string; 
+  status: "Pago" | "Pendente" | "Cancelado"; 
 }
 
-// Define the table data using the interface
+
 const tableData: Product[] = [
   {
     id: 1,
@@ -28,7 +28,7 @@ const tableData: Product[] = [
     category: "Laptop",
     valor: "R$2399.00",
     status: "Pago",
-    image: "/images/product/product-01.jpg", // Replace with actual image URL
+    image: "./images/product/product-01.jpg", // Replace with actual image URL
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const tableData: Product[] = [
     category: "Watch",
     valor: "$879.00",
     status: "Pendente",
-    image: "/images/product/product-02.jpg", // Replace with actual image URL
+    image: "./images/product/product-02.jpg", // Replace with actual image URL
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const tableData: Product[] = [
     category: "SmartPhone",
     valor: "$1869.00",
     status: "Pago",
-    image: "/images/product/product-03.jpg", // Replace with actual image URL
+    image: "./images/product/product-03.jpg", // Replace with actual image URL
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const tableData: Product[] = [
     category: "Electronics",
     valor: "$1699.00",
     status: "Cancelado",
-    image: "/images/product/product-04.jpg", // Replace with actual image URL
+    image: "./images/product/product-04.jpg", // Replace with actual image URL
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const tableData: Product[] = [
     category: "Accessories",
     status: "Pago",
     valor: "$240.00",
-    image: "/images/product/product-05.jpg", // Replace with actual image URL
+    image: "./images/product/product-05.jpg", // Replace with actual image URL
   },
 ];
 

@@ -10,9 +10,9 @@ export default function ModalExcluir({
   return (
     <div className="fixed inset-0 z-100000 flex items-center justify-center bg-black/10 backdrop-blur-sm">
       <div className="bg-white p-6 rounded-3xl shadow-md max-w-md w-full">
-        <h2 className="text-lg font-bold mb-4">Excluir Funcionário</h2>
+        <h2 className="text-lg font-bold mb-4">Excluir teste</h2>
         <p>
-          Tem certeza que deseja excluir o funcionário com ID {funcionarioId}?
+          Tem certeza que deseja excluir o teste com ID {funcionarioId}?
         </p>
         <div className="mt-4 flex justify-end gap-2">
           <button

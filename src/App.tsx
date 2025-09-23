@@ -35,17 +35,25 @@ import EditarEquipamento from './pages/Equipamentos/EditarEquipamento';
 import Produtos from "./pages/Produtos/ListaProduto";
 import CadastrarProduto from './pages/Produtos/CadastrarProduto';
 import EditarProduto from './pages/Produtos/EditarProduto';
+import Pedidos from "./pages/Pedidos/ListaPedido";
+import CadastrarPedido from './pages/Pedidos/CadastrarPedido';
+import EditarPedido from './pages/Pedidos/EditarPedido';
 import Planos from './pages/Planos/ExibirPlanos';
+import CadastroAvulso from './pages/PedidoExterno/CadastroAvulso';
+import Fatura from './pages/Fatura/ExibirFatura';
+import Operacionais from './pages/Operacional/ListaOperacional';
+import CadastrarOperacional from './pages/Operacional/CadastrarOperacional';
 import FormElements from "./pages/Forms/FormElements";
 import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
 
+
 export default function App() {
   return (
     <>
-      <Router>
+      <Router  basename="/sistema-agencia">
         <ScrollToTop />
         <Routes>
           {/* Dashboard Layout */}
@@ -94,15 +102,28 @@ export default function App() {
             <Route path="/equipamentos/cadastrar-equipamento" element={<CadastrarEquipamento />} />
             <Route path="/equipamentos/editar-equipamento" element={<EditarEquipamento />} />
             
-            {/* Equipamentos */}
+            {/* Produto */}
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/produtos/cadastrar-produto" element={<CadastrarProduto />} />
             <Route path="/produtos/editar-produto" element={<EditarProduto />} />
+
+            {/* Pedido */}
+            <Route path="/pedidos" element={<Pedidos />} />
+            <Route path="/pedidos/cadastrar-pedido" element={<CadastrarPedido />} />
+            <Route path="/pedidos/editar-pedido" element={<EditarPedido />} />
           
             {/* Planos */}
             <Route path="/planos" element={<Planos />} />
+
+            {/* Faturas */}
+            <Route path="/fatura" element={<Fatura />} />
+
+            {/* PedidoAvulso */}
+            {/* <Route path="/cadastro-avulso" element={<CadastroAvulso />} /> */}
+            {/* <Route path="/cadastro-avulso/:token" element={<CadastroAvulso />} /> */}
         
-         
+            <Route path="/operacionais" element={<Operacionais />} />
+            <Route path="/operacionais/cadastrar-operacional" element={<CadastrarOperacional />} />
 
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />
@@ -123,8 +144,14 @@ export default function App() {
 
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
+
+          {/* Rota externa sem layout pedido avulso*/}
+      <Route path="/cadastro-avulso" element={<CadastroAvulso />} />
+
         </Routes>
+        
       </Router>
+      
     </>
   );
 }
